@@ -1,0 +1,338 @@
+@media (min-width: 390px) {
+    #divs {
+        display: flex;
+        justify-content: center;
+        background: #f7ede2;
+        height: 1500px;
+        width: fit-content;
+    }
+    .aboutTitle {
+        color: #f28482;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        margin-right: 270px;
+    }
+    .skillsTitle {
+        color: #84a59d;
+        margin-top: 70;
+        margin-right: 270px;
+    }
+    .about {
+        margin-left: 25px;
+        width: 350px;
+        text-align: justify;
+        margin-top: 30px;
+        font-weight: bold;
+    }
+    .personal {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30;
+        color: #6d6875;
+        font-weight: bolder;
+    }
+    .personalinfo {
+        display: flex;
+        flex-direction: column;
+    }
+    .span {
+        color: #b5838d;
+        font-weight: normal;
+        margin-left: 10px;
+    }
+    .list {
+        margin-left: 6px;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+    .p {
+        margin-top: 30;
+        text-align: 'start';
+        margin-left: 80px;
+        width: 150px;
+    }
+    .containers {
+        width: 230%; /* Full width */
+        background-color: #ddd;
+        border-radius: 10px;
+        height: min-content;
+        margin-left: -30px;
+    }
+    .div2 {
+        width: 160px;
+        margin-right: 100px;
+        margin-left: 45px;
+    }
+    .div3 {
+        width: 160px;
+        margin-right: 500px;
+        margin-left: 40px;
+    }
+    #skillshtml {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 80%;
+        background-color: #f7b267; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #skillscss {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 70%;
+        background-color: #f79d65; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #skillsjs {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 75%;
+        background-color: #f4845f; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #skillsreact {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 80%;
+        background-color: #f27059; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #skillsredux {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 80%;
+        background-color: #f25c54; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #skillsexpress {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 80%;
+        background-color: #e76f51; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #skisllsts {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 70%;
+        background-color: #e9c46a; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #skillsM {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 70%;
+        background-color: #f6bd60; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #skillsSq {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 75%;
+        background-color: #c32f27; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #skillsP {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 75%;
+        background-color: #db7c26; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #skillsMongo {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 70%;
+        background-color: #c75146; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #skillsMongoose {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 70%;
+        background-color: #ea8c55; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+@media (min-width: 700px) {
+    #divs {
+        display: flex;
+        justify-content: center;
+        background: #f7ede2;
+        width: 100%;
+        height: 1100px;
+    }
+    .aboutTitle {
+        color: #f28482;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        margin-right: 0px;
+    }
+    .about {
+        width: 700px;
+        text-align: justify;
+        margin-top: 30px;
+        font-weight: bold;
+        margin-left: 330px;
+    }
+    .skillsTitle {
+        color: #84a59d;
+        margin-top: 70;
+        margin-right: 0px;
+    }
+    .personal {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30;
+        color: #6d6875;
+        font-weight: bolder;
+    }
+    .span {
+        color: #b5838d;
+        font-weight: normal;
+    }
+    .skills {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+
+    .p {
+        margin-top: 30;
+        text-align: 'start';
+    }
+    .containers {
+        width: 250%; /* Full width */
+        background-color: #ddd;
+        border-radius: 10px;
+        height: min-content;
+    }
+    .div2 {
+        margin-right: 300px;
+        margin-left: 280px;
+    }
+    .div3 {
+        margin-right: 500px;
+        margin-left: -10px;
+    }
+    #skillshtml {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 80%;
+        background-color: #f7b267; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #skillscss {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 70%;
+        background-color: #f79d65; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #skillsjs {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 75%;
+        background-color: #f4845f; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #skillsreact {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 80%;
+        background-color: #f27059; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #skillsredux {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 80%;
+        background-color: #f25c54; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #skillsexpress {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 80%;
+        background-color: #e76f51; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #skisllsts {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 70%;
+        background-color: #e9c46a; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #skillsM {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 70%;
+        background-color: #f6bd60; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #skillsSq {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 75%;
+        background-color: #c32f27; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #skillsP {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 75%;
+        background-color: #db7c26; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #skillsMongo {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 70%;
+        background-color: #c75146; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #skillsMongoose {
+        text-align: right; /* Right-align text */
+        color: white;
+        width: 70%;
+        background-color: #ea8c55; /* White text color */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}

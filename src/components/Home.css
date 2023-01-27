@@ -1,0 +1,81 @@
+@media (min-width: 390px) {
+    .divContainer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background: #f7ede2;
+        min-height: 1080px;
+    }
+    .divComplete {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        background: #f7ede2;
+    }
+    .githubs {
+        margin-left: 30px;
+        width: 30px;
+        height: 30px;
+        color: #84a59d;
+    }
+    .linkedins {
+        margin-left: 30px;
+        width: 30px;
+        height: 30px;
+        color: #84a59d;
+    }
+    .divContain {
+        margin-left: 20;
+    }
+    .color {
+        color: black;
+    }
+    .img {
+        clip-path: circle(49% at 50% 49%);
+        width: 300px;
+        height: 300px;
+        margin-left: 45px;
+    }
+}
+
+@media (min-width: 700px) {
+    .divContainer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background: #f7ede2;
+        min-height: 1080px;
+    }
+    .divComplete {
+        margin-top: 250px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        background: #f7ede2;
+    }
+    .githubs {
+        margin-left: 30px;
+        width: 30px;
+        height: 30px;
+        color: #84a59d;
+    }
+    .linkedins {
+        margin-left: 30px;
+        width: 30px;
+        height: 30px;
+        color: #84a59d;
+    }
+    .divContain {
+        margin-left: 20;
+    }
+    .color {
+        color: black;
+    }
+    .img {
+        clip-path: circle(49% at 50% 49%);
+        width: 400px;
+        height: 400px;
+        margin-left: 30;
+    }
+}
