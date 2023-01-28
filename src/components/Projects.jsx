@@ -29,6 +29,7 @@ function Projects() {
                                 <img
                                     src="nabijash.png"
                                     style={{ width: '100%' }}
+                                    alt="nabijash"
                                 ></img>
                             </div>
                         </a>
@@ -54,6 +55,7 @@ function Projects() {
                                 <img
                                     src="PIFOOD.png"
                                     style={{ width: '100%' }}
+                                    alt="food pi"
                                 ></img>
                             </div>
                         </a>

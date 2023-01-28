@@ -10,12 +10,12 @@ function About() {
                 <h1 class="aboutTitle">About me </h1>
                 <div class="about">
                     <p>
-                        Ingeniera Biomédica y desarrolladora web full stack
-                        graduada del bootcamp Soy henry, apasionada por el mundo
-                        de la programación, considero que soy una persona con
-                        capacidad para trabajar en equipo, con mucho compromiso
-                        y actitud para aprender nuevas tecnologías, amo los
-                        retos y la resolución de problemas.
+                        Biomedical engineer and full stack web developer
+                        graduated from henry's bootcamp, passionate about
+                        programming world, I consider myself a person with
+                        teamwork skills , committed and always with positive
+                        attitude to learn new technologies, I love challenges
+                        and solving problems.
                     </p>
                     <div class="personal">
                         <div class="personalinfo">
