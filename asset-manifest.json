@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/silvana.github.io/static/css/main.988e3591.css",
-    "main.js": "/silvana.github.io/static/js/main.ed694f6c.js",
-    "static/js/787.28cb0dcd.chunk.js": "/silvana.github.io/static/js/787.28cb0dcd.chunk.js",
-    "static/media/logo.svg": "/silvana.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/silvana.github.io/index.html",
-    "main.988e3591.css.map": "/silvana.github.io/static/css/main.988e3591.css.map",
-    "main.ed694f6c.js.map": "/silvana.github.io/static/js/main.ed694f6c.js.map",
-    "787.28cb0dcd.chunk.js.map": "/silvana.github.io/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/static/css/main.988e3591.css",
+    "main.js": "/static/js/main.80be3348.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.988e3591.css.map": "/static/css/main.988e3591.css.map",
+    "main.80be3348.js.map": "/static/js/main.80be3348.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.988e3591.css",
-    "static/js/main.ed694f6c.js"
+    "static/js/main.80be3348.js"
   ]
 }
