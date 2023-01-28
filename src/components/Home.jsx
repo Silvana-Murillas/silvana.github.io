@@ -8,11 +8,7 @@ function Home() {
         <div class="divContainer">
             <NavB />
             <div class="divComplete">
-                <img
-                    src="20221219_163610-removebg-preview.png"
-                    class="img"
-                    alt="Photo silvana"
-                />
+                <img src="20221219_163610-removebg-preview.png" class="img" />
                 <div class="divContain">
                     <h1 style={{ fontFamily: 'Poppins' }}>Hi, my name is </h1>
                     <h1

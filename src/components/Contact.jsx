@@ -5,24 +5,7 @@ import './Contact.css';
 function Contact() {
     const [state, handleSubmit] = useForm('xeqweqey');
     if (state.succeeded) {
-        return (
-            <div class="main">
-                {' '}
-                <NavB />
-                <h2
-                    style={{
-                        fontFamily: 'Poppins',
-                        fontSize: '20px',
-                        color: '#F28482',
-                        fontWeight: 'bold',
-                        marginTop: 10,
-                    }}
-                >
-                    {' '}
-                    Message send!
-                </h2>
-            </div>
-        );
+        return <div>Thanks for Sending a message!!</div>;
     }
     return (
         <div class="div">
@@ -44,7 +27,6 @@ function Contact() {
                         <img
                             src="icons8-secured-letter-50.png"
                             style={{ marginTop: 15 }}
-                            alt="iconmemail"
                         />
                         <h2
                             style={{
@@ -74,7 +56,6 @@ function Contact() {
                         <img
                             src="icons8-phone-40.png"
                             style={{ marginTop: 15 }}
-                            alt="iconcontact"
                         />
                         <h2
                             style={{
@@ -104,7 +85,6 @@ function Contact() {
                         <img
                             src="icons8-place-marker-50.png"
                             style={{ marginTop: 15 }}
-                            alt="iconlocation"
                         />{' '}
                         <h2
                             style={{
