@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import './About.css';
 function About() {
     return (
-        <div id="divs">
+        <div class="divs">
             <NavB />
             <div style={{ marginTop: 90, fontFamily: 'Poppins' }}>
                 <h1 class="aboutTitle">About me </h1>
