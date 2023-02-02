@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import NavB from './NavB.jsx';
 import Button from 'react-bootstrap/Button';
 import './Home.css';
+import { ThemeContext } from '../App.js';
 
 function Home() {
+    const { theme, toggleTheme } = useContext(ThemeContext);
     return (
         <div class="divContainer">
             <NavB />
             <div class="divComplete">
                 <img
-                    src="20221219_163610-removebg-preview.png"
+                    src={
+                        theme === 'light'
+                            ? '20221219_163610-removebg-preview.png'
+                            : '20221219_163610-removebg-preview (2).png'
+                    }
                     class="img"
                     alt="silvana"
                 />
@@ -34,11 +40,19 @@ function Home() {
                         <Button
                             variant="primary"
                             size="lg"
-                            style={{
-                                background: '#f28482',
-                                border: 'transparent',
-                                fontFamily: 'Poppins',
-                            }}
+                            style={
+                                theme === 'light'
+                                    ? {
+                                          background: '#f28482',
+                                          border: 'transparent',
+                                          fontFamily: 'Poppins',
+                                      }
+                                    : {
+                                          background: '#457d8b',
+                                          border: 'transparent',
+                                          fontFamily: 'Poppins',
+                                      }
+                            }
                         >
                             <a
                                 href="English _CV_Silvana.pdf"

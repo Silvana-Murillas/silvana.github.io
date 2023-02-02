@@ -6,6 +6,24 @@
         background: #f7ede2;
         height: 840px;
     }
+    #dark .div {
+        background: #3b4752;
+    }
+    .divcont {
+        margin-top: 100px;
+        background: #f7ede2;
+    }
+    #dark .divcont {
+        background: #3b4752;
+    }
+    .title {
+        font-weight: bold;
+        font-family: Montserrat;
+        color: #f28482;
+    }
+    #dark .title {
+        color: #f284828a;
+    }
     .projects {
         display: flex;
         justify-content: center;
@@ -23,6 +41,13 @@
         cursor: pointer;
         margin-top: 50px;
     }
+    #dark .cards {
+        box-shadow: 20px 20px 60px #d9d5d538, -20px -20px 60px #ffffff63;
+    }
+
+    #dark .cards {
+        background: #3b4752;
+    }
 
     .cards:hover {
         width: 90%;
@@ -37,6 +62,15 @@
         justify-content: center;
         background: #f7ede2;
         min-height: 1080px;
+    }
+    .divcont {
+        margin-top: 100px;
+        background: #f7ede2;
+    }
+    .title {
+        font-weight: bold;
+        font-family: Montserrat;
+        color: #f28482;
     }
     .projects {
         display: flex;

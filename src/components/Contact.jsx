@@ -28,16 +28,7 @@ function Contact() {
         <div class="div">
             <NavB />
             <div class="main">
-                <h1
-                    style={{
-                        color: '#F28482',
-                        fontFamily: 'Montserrat',
-                        fontWeight: 'bold',
-                        marginBottom: '50px',
-                    }}
-                >
-                    Contact me{' '}
-                </h1>
+                <h1 class="title">Contact me </h1>
                 <div class="info">
                     <div class="contact">
                         {' '}
@@ -46,29 +37,8 @@ function Contact() {
                             style={{ marginTop: 15 }}
                             alt="email"
                         />
-                        <h2
-                            style={{
-                                fontFamily: 'Poppins',
-                                fontSize: '20px',
-                                color: 'black',
-                                fontWeight: 'bold',
-                                marginTop: 10,
-                            }}
-                        >
-                            {' '}
-                            My email
-                        </h2>
-                        <p
-                            style={{
-                                fontFamily: 'Poppins',
-                                fontSize: '20px',
-                                color: 'black',
-                                fontWeight: 'normal',
-                                marginTop: 10,
-                            }}
-                        >
-                            silvanamurillas@gmail.com
-                        </p>
+                        <h2> My email</h2>
+                        <p>silvanamurillas@gmail.com</p>
                     </div>
                     <div class="contact">
                         <img
@@ -76,29 +46,8 @@ function Contact() {
                             style={{ marginTop: 15 }}
                             alt="phone"
                         />
-                        <h2
-                            style={{
-                                fontFamily: 'Poppins',
-                                fontSize: '20px',
-                                color: 'black',
-                                fontWeight: 'bold',
-                                marginTop: 10,
-                            }}
-                        >
-                            {' '}
-                            My phone
-                        </h2>
-                        <p
-                            style={{
-                                fontFamily: 'Poppins',
-                                fontSize: '20px',
-                                color: 'black',
-                                fontWeight: 'normal',
-                                marginTop: 10,
-                            }}
-                        >
-                            +57-3218615549
-                        </p>
+                        <h2> My phone</h2>
+                        <p>+57-3218615549</p>
                     </div>
                     <div class="contact">
                         <img
@@ -106,29 +55,8 @@ function Contact() {
                             style={{ marginTop: 15 }}
                             alt="location"
                         />{' '}
-                        <h2
-                            style={{
-                                fontFamily: 'Poppins',
-                                fontSize: '20px',
-                                color: 'black',
-                                fontWeight: 'bold',
-                                marginTop: 10,
-                            }}
-                        >
-                            {' '}
-                            Location
-                        </h2>
-                        <p
-                            style={{
-                                fontFamily: 'Poppins',
-                                fontSize: '20px',
-                                color: 'black',
-                                fontWeight: 'normal',
-                                marginTop: 10,
-                            }}
-                        >
-                            Colombia
-                        </p>
+                        <h2> Location</h2>
+                        <p>Colombia</p>
                     </div>
                 </div>
                 <form onSubmit={handleSubmit} class="form">

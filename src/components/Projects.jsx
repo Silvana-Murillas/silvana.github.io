@@ -7,21 +7,8 @@ function Projects() {
     return (
         <div class="div">
             <NavB />
-            <div
-                style={{
-                    marginTop: 100,
-                    background: '#F7EDE2',
-                }}
-            >
-                <h1
-                    style={{
-                        fontWeight: 'bold',
-                        fontFamily: 'Montserrat',
-                        color: '#F28482',
-                    }}
-                >
-                    My Projects{' '}
-                </h1>
+            <div class="divcont">
+                <h1 class="title">My Projects </h1>
                 <div class="projects">
                     <div class="cards">
                         <a target="_blank" href="https://nabijash.vercel.app/">

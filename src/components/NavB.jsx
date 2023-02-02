@@ -1,10 +1,15 @@
 import React from 'react';
+import { useContext } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
+import { ThemeContext } from '../App';
 
 function NavB() {
+    const { theme, toggleTheme } = useContext(ThemeContext);
+
     return (
         <>
             {/* <Navbar bg="dark" variant="dark">
@@ -34,17 +39,28 @@ function NavB() {
                 bg="ligth"
                 variant="light"
                 fixed="top"
-                style={{
-                    background: '#f5cac3',
-                    fontFamily: 'Poppins',
-                }}
+                style={
+                    theme === 'light'
+                        ? {
+                              background: '#f5cac3',
+                              fontFamily: 'Poppins',
+                          }
+                        : { background: '#457d8b', fontFamily: 'Poppins' }
+                }
             >
                 <Container>
                     <Navbar.Brand>
                         {' '}
                         <Link
                             to="/"
-                            style={{ textDecoration: 'none', color: '#6d6875' }}
+                            style={
+                                theme === 'light'
+                                    ? {
+                                          textDecoration: 'none',
+                                          color: '#6d6875',
+                                      }
+                                    : { textDecoration: 'none', color: 'white' }
+                            }
                         >
                             Home
                         </Link>
@@ -53,10 +69,17 @@ function NavB() {
                         <Nav.Link>
                             <Link
                                 to="/about"
-                                style={{
-                                    textDecoration: 'none',
-                                    color: '#6d6875',
-                                }}
+                                style={
+                                    theme === 'light'
+                                        ? {
+                                              textDecoration: 'none',
+                                              color: '#6d6875',
+                                          }
+                                        : {
+                                              textDecoration: 'none',
+                                              color: 'white',
+                                          }
+                                }
                             >
                                 About me
                             </Link>
@@ -65,10 +88,17 @@ function NavB() {
                             {' '}
                             <Link
                                 to="/projects"
-                                style={{
-                                    textDecoration: 'none',
-                                    color: '#6d6875',
-                                }}
+                                style={
+                                    theme === 'light'
+                                        ? {
+                                              textDecoration: 'none',
+                                              color: '#6d6875',
+                                          }
+                                        : {
+                                              textDecoration: 'none',
+                                              color: 'white',
+                                          }
+                                }
                             >
                                 Projects
                             </Link>
@@ -76,14 +106,27 @@ function NavB() {
                         <Nav.Link>
                             <Link
                                 to="/contact"
-                                style={{
-                                    textDecoration: 'none',
-                                    color: '#6d6875',
-                                }}
+                                style={
+                                    theme === 'light'
+                                        ? {
+                                              textDecoration: 'none',
+                                              color: '#6d6875',
+                                          }
+                                        : {
+                                              textDecoration: 'none',
+                                              color: 'white',
+                                          }
+                                }
                             >
                                 Contact me
                             </Link>
                         </Nav.Link>
+                        <DarkModeSwitch
+                            style={{ marginLeft: '1rem' }}
+                            checked={theme === 'light' ? false : true}
+                            onChange={toggleTheme}
+                            size={30}
+                        />
                     </Nav>
                 </Container>
             </Navbar>

@@ -1,31 +1,44 @@
 @media (min-width: 360px) {
     .divs {
         display: flex;
-
+        align-items: flex-start;
         justify-content: center;
         background: #f7ede2;
-        height: 1500px;
-        width: 412px;
+        min-height: 1080px;
+    }
+
+    #dark .divs {
+        background: #3b4752;
     }
     .aboutTitle {
         color: #f28482;
         font-family: 'Montserrat';
         font-weight: bold;
         width: fit-content;
-        margin-left: 130px;
+        margin-left: 100px;
+    }
+    #dark .aboutTitle {
+        color: #f284828a;
     }
     .skillsTitle {
         color: #84a59d;
-        margin-top: 70;
+        margin-top: 40px;
         width: fit-content;
-        margin-left: 130px;
+        margin-left: 105px;
+    }
+    #dark .skillsTitle {
+        color: #f284828a;
     }
     .about {
-        margin-left: 30px;
-        width: 350px;
+        margin-left: 0px;
+        width: 340px;
         text-align: justify;
         margin-top: 30px;
         font-weight: bold;
+        font-size: small;
+    }
+    #dark .about {
+        color: white;
     }
     .personal {
         display: flex;
@@ -33,6 +46,9 @@
         margin-top: 30;
         color: #6d6875;
         font-weight: bolder;
+    }
+    #dark .personal {
+        color: #85828b;
     }
     .personalinfo {
         display: flex;
@@ -43,26 +59,32 @@
         font-weight: normal;
         margin-left: 10px;
     }
+    #dark .span {
+        color: #c99ba4;
+    }
     .list {
         margin-left: 6px;
     }
     .skills {
         display: flex;
         flex-direction: column;
-        width: 412px;
+        width: 340px;
     }
     .p {
         margin-top: 30;
         text-align: 'start';
-        margin-left: 70px;
+        margin-left: 40px;
         width: 150px;
     }
+    #dark .p {
+        color: white;
+    }
     .containers {
-        width: 230%; /* Full width */
+        width: 300px; /* Full width */
         background-color: #ddd;
         border-radius: 10px;
         height: min-content;
-        margin-left: 0px;
+        margin-left: -30px;
     }
     .div2 {
         width: 130px;
@@ -198,6 +220,7 @@
         margin-top: 30px;
         font-weight: bold;
         margin-left: 5px;
+        font-size: medium;
     }
     .skillsTitle {
         color: #84a59d;
