@@ -32,7 +32,7 @@ function Projects() {
                             {' '}
                             NABIJASH (final project)
                         </h2>
-                        <h3
+                        {/* <h3
                             style={{
                                 fontFamily: 'Poppins',
                                 fontSize: '15px',
@@ -42,7 +42,7 @@ function Projects() {
                             }}
                         >
                             Technologies used:
-                        </h3>
+                        </h3> */}
                     </div>
                     <div class="cards">
                         <a
