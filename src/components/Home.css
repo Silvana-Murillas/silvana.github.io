@@ -1,10 +1,11 @@
-@media (min-width: 360px) {
+@media (min-width: 200px) {
     .divContainer {
         display: flex;
         align-items: flex-start;
         justify-content: center;
         background: #f7ede2;
-        min-height: 1080px;
+        min-height: 100vh;
+        max-height: 100%; /* height: 100vh; */
     }
 
     #dark .divContainer {
@@ -56,7 +57,7 @@
         align-items: flex-start;
         justify-content: center;
         background: #f7ede2;
-        min-height: 1080px;
+        height: 100vh;
     }
 
     .divComplete {

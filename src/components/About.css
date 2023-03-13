@@ -1,21 +1,29 @@
-@media (min-width: 360px) {
+@media (min-width: 200px) {
     .divs {
         display: flex;
         align-items: flex-start;
         justify-content: center;
         background: #f7ede2;
-        min-height: 1080px;
+        min-height: 100vh;
+        max-height: 100%;
     }
 
     #dark .divs {
         background: #3b4752;
+    }
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 90px;
+        font-family: 'Poppins';
+        align-items: center;
     }
     .aboutTitle {
         color: #f28482;
         font-family: 'Montserrat';
         font-weight: bold;
         width: fit-content;
-        margin-left: 100px;
     }
     #dark .aboutTitle {
         color: #f284828a;
@@ -24,14 +32,15 @@
         color: #84a59d;
         margin-top: 40px;
         width: fit-content;
-        margin-left: 105px;
+
+        margin-bottom: 1rem;
     }
     #dark .skillsTitle {
         color: #f284828a;
     }
     .about {
         margin-left: 0px;
-        width: 340px;
+        width: 90%;
         text-align: justify;
         margin-top: 30px;
         font-weight: bold;
@@ -42,7 +51,8 @@
     }
     .personal {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
         margin-top: 30;
         color: #6d6875;
         font-weight: bolder;
@@ -53,6 +63,7 @@
     .personalinfo {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .span {
         color: #b5838d;
@@ -65,10 +76,26 @@
     .list {
         margin-left: 6px;
     }
-    .skills {
+    .skill {
         display: flex;
         flex-direction: column;
-        width: 340px;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills {
+        display: flex;
+        flex-direction: inherit;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        width: 200px;
+    }
+    .skills img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
     }
     .p {
         margin-top: 30;
@@ -206,13 +233,20 @@
         background: #f7ede2;
         width: 100%;
     }
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 90px;
+        font-family: 'Poppins';
+        align-items: center;
+    }
     .aboutTitle {
         color: #f28482;
         font-family: 'Montserrat';
         font-weight: bold;
         align-self: center;
         width: fit-content;
-        margin-left: 250px;
     }
     .about {
         width: 700px;
@@ -222,15 +256,24 @@
         margin-left: 5px;
         font-size: medium;
     }
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .skillsTitle {
         color: #84a59d;
-        margin-top: 70;
-        margin-right: 0px;
+        margin-top: 70px;
+        margin-left: 0px;
+        margin-bottom: 2rem;
         width: fit-content;
-        margin-left: 280px;
     }
+
     .personal {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         margin-top: 30;
         color: #6d6875;
@@ -242,8 +285,13 @@
     }
     .skills {
         display: flex;
+        flex-direction: inherit;
         flex-direction: row;
-        align-self: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        width: 350px;
     }
 
     .p {

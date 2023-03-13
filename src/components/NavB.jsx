@@ -49,23 +49,26 @@ function NavB() {
                 }
             >
                 <Container>
-                    <Navbar.Brand>
-                        {' '}
-                        <Link
-                            to="/"
-                            style={
-                                theme === 'light'
-                                    ? {
-                                          textDecoration: 'none',
-                                          color: '#6d6875',
-                                      }
-                                    : { textDecoration: 'none', color: 'white' }
-                            }
-                        >
-                            Home
-                        </Link>
-                    </Navbar.Brand>
                     <Nav className="me-auto">
+                        <Nav.Link>
+                            {' '}
+                            <Link
+                                to="/"
+                                style={
+                                    theme === 'light'
+                                        ? {
+                                              textDecoration: 'none',
+                                              color: '#6d6875',
+                                          }
+                                        : {
+                                              textDecoration: 'none',
+                                              color: 'white',
+                                          }
+                                }
+                            >
+                                Home
+                            </Link>
+                        </Nav.Link>
                         <Nav.Link>
                             <Link
                                 to="/about"

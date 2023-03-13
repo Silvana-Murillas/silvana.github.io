@@ -79,10 +79,12 @@
     margin-left: 120px;
 } */
 
-@media (min-width: 360px) {
+@media (min-width: 200px) {
     .main {
         margin-top: 100px;
         background: #f7ede2;
+        min-height: 100vh;
+        max-height: 100%;
     }
     #dark .main {
         background: #3b4752;
@@ -211,8 +213,11 @@
 }
 @media (min-width: 1024px) {
     .main {
-        margin-top: 100px;
+        margin-top: 80px;
         background: #f7ede2;
+        min-height: 100vh;
+        max-height: 100%;
+        height: fit-content;
     }
     .div {
         display: flex;

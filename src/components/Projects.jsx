@@ -32,6 +32,17 @@ function Projects() {
                             {' '}
                             NABIJASH (final project)
                         </h2>
+                        <h3
+                            style={{
+                                fontFamily: 'Poppins',
+                                fontSize: '15px',
+                                color: '#f4a261',
+                                fontWeight: 'bold',
+                                marginTop: 10,
+                            }}
+                        >
+                            Technologies used:
+                        </h3>
                     </div>
                     <div class="cards">
                         <a
@@ -57,6 +68,58 @@ function Projects() {
                         >
                             {' '}
                             Food individual Project (Single page application)
+                        </h2>
+                    </div>
+                    <div class="cards">
+                        <a
+                            target="_blank"
+                            href="https://github.com/Silvana-Murillas/Movies-finder"
+                        >
+                            <div>
+                                <img
+                                    src="movies.png"
+                                    style={{ width: '100%' }}
+                                    alt="food pi"
+                                ></img>
+                            </div>
+                        </a>
+                        <h2
+                            style={{
+                                fontFamily: 'Poppins',
+                                fontSize: '20px',
+                                color: '#f4a261',
+                                fontWeight: 'bold',
+                                marginTop: 10,
+                            }}
+                        >
+                            {' '}
+                            Movie finder (Single page application)
+                        </h2>
+                    </div>
+                    <div class="cards">
+                        <a
+                            target="_blank"
+                            href="https://github.com/Silvana-Murillas/Shopping-cart"
+                        >
+                            <div>
+                                <img
+                                    src="shopping.png"
+                                    style={{ width: '100%' }}
+                                    alt="food pi"
+                                ></img>
+                            </div>
+                        </a>
+                        <h2
+                            style={{
+                                fontFamily: 'Poppins',
+                                fontSize: '20px',
+                                color: '#f4a261',
+                                fontWeight: 'bold',
+                                marginTop: 10,
+                            }}
+                        >
+                            {' '}
+                            Shoping cart (Single page application)
                         </h2>
                     </div>
                 </div>
