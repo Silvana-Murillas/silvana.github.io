@@ -1,8 +1,10 @@
 import { useForm, ValidationError } from '@formspree/react';
 import NavB from './NavB';
 import './Contact.css';
+import { useTranslation } from 'react-i18next';
 
 function Contact() {
+    const [t, i18n] = useTranslation('global');
     const [state, handleSubmit] = useForm('xeqweqey');
     if (state.succeeded) {
         return (
@@ -19,7 +21,7 @@ function Contact() {
                     }}
                 >
                     {' '}
-                    Message sent!
+                    {t('contact.message')}
                 </h2>
             </div>
         );
@@ -28,7 +30,7 @@ function Contact() {
         <div class="div">
             <NavB />
             <div class="main">
-                <h1 class="title">Contact me </h1>
+                <h1 class="title">{t('contact.contact-me')} </h1>
                 <div class="info">
                     <div class="contact">
                         {' '}
@@ -37,7 +39,7 @@ function Contact() {
                             style={{ marginTop: 15 }}
                             alt="email"
                         />
-                        <h2> My email</h2>
+                        <h2> {t('contact.email')}</h2>
                         <p>silvanamurillas@gmail.com</p>
                     </div>
                     <div class="contact">
@@ -46,8 +48,8 @@ function Contact() {
                             style={{ marginTop: 15 }}
                             alt="phone"
                         />
-                        <h2> My phone</h2>
-                        <p>+57-3218615549</p>
+                        <h2> {t('contact.phone')}</h2>
+                        <p>+57 3218615549</p>
                     </div>
                     <div class="contact">
                         <img
@@ -55,19 +57,22 @@ function Contact() {
                             style={{ marginTop: 15 }}
                             alt="location"
                         />{' '}
-                        <h2> Location</h2>
+                        <h2> {t('contact.location')}</h2>
                         <p>Colombia</p>
                     </div>
                 </div>
                 <form onSubmit={handleSubmit} class="form">
-                    <div>
+                    <div className="input">
                         <label htmlFor="email" id="input">
-                            Name
+                            {t('contact.name')}
                         </label>
                         <input id="email" type="name" name="name" />
                     </div>
-                    <div>
-                        <label htmlFor="email">Email Address</label>
+                    <div className="input">
+                        <label htmlFor="email">
+                            {' '}
+                            {t('contact.email-direction')}
+                        </label>
 
                         <input id="email" type="email" name="email" />
                         <ValidationError
@@ -78,7 +83,7 @@ function Contact() {
                     </div>
                     <div id="cont">
                         <label htmlFor="email" id="inputmessage">
-                            Message
+                            {t('contact.mess')}
                         </label>
                         <textarea id="message" name="message" />
                         <ValidationError
@@ -89,7 +94,7 @@ function Contact() {
                     </div>
                     <div id="submit">
                         <button type="submit" disabled={state.submitting}>
-                            Submit
+                            {t('contact.submit')}
                         </button>
                     </div>
                 </form>

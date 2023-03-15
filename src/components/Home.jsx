@@ -3,9 +3,11 @@ import NavB from './NavB.jsx';
 import Button from 'react-bootstrap/Button';
 import './Home.css';
 import { ThemeContext } from '../App.js';
+import { useTranslation } from 'react-i18next';
 
 function Home() {
     const { theme, toggleTheme } = useContext(ThemeContext);
+    const [t, i18n] = useTranslation('global');
     return (
         <div class="divContainer">
             <NavB />
@@ -20,23 +22,18 @@ function Home() {
                     alt="silvana"
                 />
                 <div class="divContain">
-                    <h1 style={{ fontFamily: 'Poppins' }}>Hi, my name is </h1>
-                    <h1
-                        style={{ fontWeight: 'bold', fontFamily: 'Montserrat' }}
-                    >
-                        {' '}
-                        Silvana Murillas
-                    </h1>
-                    <hr />
+                    <h1 className="presentation">{t('home.greeting')} </h1>
+                    <h1 className="name"> {t('home.name')}</h1>
                     <h2 style={{ fontFamily: 'Poppins' }}>
                         {' '}
-                        Passionate full stack web developer from Colombia
+                        <hr />
+                        {t('home.about')}
                     </h2>
                     <p style={{ fontSize: 20, fontFamily: 'Poppins' }}>
                         {' '}
-                        In this space you can know more about me{' '}
+                        {t('home.know')}
                     </p>
-                    <div>
+                    <div className="buttons">
                         <Button
                             variant="primary"
                             size="lg"
@@ -62,7 +59,7 @@ function Home() {
                                     textDecoration: 'none',
                                 }}
                             >
-                                ⭳ Resume
+                                ⭳ {t('home.resume')}
                             </a>
                         </Button>
 

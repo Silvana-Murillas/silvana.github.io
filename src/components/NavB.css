@@ -1,0 +1,24 @@
+@media (min-width: 200px) {
+    .navBar {
+        background: #f5cac3;
+        font-family: 'Poppins';
+    }
+
+    .nav {
+        gap: 1px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #dark .navBar {
+        background: #457d8b;
+    }
+    .btn-primary .btn {
+        background: #f28482;
+        border: none;
+        font-family: 'Poppins';
+    }
+    #dark .btn-primary .btn {
+        background-color: #3b4752;
+    }
+}

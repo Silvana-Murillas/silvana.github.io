@@ -1,0 +1,46 @@
+{
+    "home": {
+        "greeting": "Hi, my name is",
+        "name": "Silvana Murillas",
+        "about": "Passionate full stack web developer from Colombia",
+        "know": " In this space you can know more about me",
+        "resume": "Resume"
+    },
+
+    "about": {
+        "about": "About me",
+        "about-me": "Full stack web developer and Biomedical engineer , passionate about programming world , I consider myself a person with teamwork skills , committed and always with  positive attitude to learn new technologies, I love challenges and solving problems.",
+        "birthday": "Birthday :",
+        "date": "25-Octuber",
+        "language": "Language :",
+        "info": "Spanish, English(B2)",
+        "phone": "Phone :",
+        "email": "Email :",
+        "country": "Country :",
+        "skills": "My skills"
+    },
+    "projects": {
+        "my-proyects": "My Projects",
+        "nabijash": "final project",
+        "food": "Food individual Project (Single page application)",
+        "movie": "Movie finder (Single page application)",
+        "shopping": "Shoping cart (Single page application)"
+    },
+    "contact": {
+        "message": "Message sent !",
+        "contact-me": "Contact me",
+        "email": "My email",
+        "phone": "My phone",
+        "location": "Location",
+        "name": " Name",
+        "email-direction": "Email Address",
+        "mess": "Message",
+        "submit": "Submit"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About me",
+        "projects": "Projects",
+        "contact": "Contact me"
+    }
+}

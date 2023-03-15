@@ -24,6 +24,7 @@
         font-family: 'Montserrat';
         font-weight: bold;
         width: fit-content;
+        margin-top: 50px;
     }
     #dark .aboutTitle {
         color: #f284828a;
@@ -63,7 +64,7 @@
     .personalinfo {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
     .span {
         color: #b5838d;
@@ -75,7 +76,9 @@
     }
     .list {
         margin-left: 6px;
+        text-align: start;
     }
+
     .skill {
         display: flex;
         flex-direction: column;
@@ -87,10 +90,10 @@
         flex-direction: inherit;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        /* justify-content: space-around; */
         gap: 10px;
         align-items: center;
-        width: 200px;
+        width: 250px;
     }
     .skills img {
         width: 40px;
@@ -274,24 +277,34 @@
     .personal {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        margin-top: 30;
+        gap: 1rem;
+        margin-top: 30px;
         color: #6d6875;
         font-weight: bolder;
+    }
+    .personalinfo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .span {
         color: #b5838d;
         font-weight: normal;
+        margin: 0px;
     }
+    .list {
+        margin: 0px;
+    }
+
     .skills {
         display: flex;
         flex-direction: inherit;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        /* justify-content: center; */
+        gap: 1rem;
         align-items: center;
-        width: 350px;
+        width: 450px;
     }
 
     .p {

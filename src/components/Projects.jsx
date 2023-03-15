@@ -2,13 +2,15 @@ import React from 'react';
 import NavB from './NavB.jsx';
 import Button from 'react-bootstrap/Button';
 import './Projects.css';
+import { useTranslation } from 'react-i18next';
 
 function Projects() {
+    const [t, i18n] = useTranslation('global');
     return (
         <div class="div">
             <NavB />
             <div class="divcont">
-                <h1 class="title">My Projects </h1>
+                <h1 class="projectsTitle"> {t('projects.my-proyects')}</h1>
                 <div class="projects">
                     <div class="cards">
                         <a target="_blank" href="https://nabijash.vercel.app/">
@@ -23,14 +25,14 @@ function Projects() {
                         <h2
                             style={{
                                 fontFamily: 'Poppins',
-                                fontSize: '20px',
+                                fontSize: '18px',
                                 color: '#f4a261',
                                 fontWeight: 'bold',
                                 marginTop: 10,
                             }}
                         >
                             {' '}
-                            NABIJASH (final project)
+                            NABIJASH ({t('projects.nabijash')})
                         </h2>
                         {/* <h3
                             style={{
@@ -60,14 +62,14 @@ function Projects() {
                         <h2
                             style={{
                                 fontFamily: 'Poppins',
-                                fontSize: '20px',
+                                fontSize: '18px',
                                 color: '#f4a261',
                                 fontWeight: 'bold',
                                 marginTop: 10,
                             }}
                         >
                             {' '}
-                            Food individual Project (Single page application)
+                            {t('projects.food')}
                         </h2>
                     </div>
                     <div class="cards">
@@ -86,14 +88,14 @@ function Projects() {
                         <h2
                             style={{
                                 fontFamily: 'Poppins',
-                                fontSize: '20px',
+                                fontSize: '18px',
                                 color: '#f4a261',
                                 fontWeight: 'bold',
                                 marginTop: 10,
                             }}
                         >
                             {' '}
-                            Movie finder (Single page application)
+                            {t('projects.movie')}
                         </h2>
                     </div>
                     <div class="cards">
@@ -112,14 +114,14 @@ function Projects() {
                         <h2
                             style={{
                                 fontFamily: 'Poppins',
-                                fontSize: '20px',
+                                fontSize: '18px',
                                 color: '#f4a261',
                                 fontWeight: 'bold',
                                 marginTop: 10,
                             }}
                         >
                             {' '}
-                            Shoping cart (Single page application)
+                            {t('projects.shopping')}
                         </h2>
                     </div>
                 </div>

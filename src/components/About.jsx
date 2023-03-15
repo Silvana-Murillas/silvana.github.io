@@ -2,41 +2,47 @@ import React from 'react';
 import NavB from './NavB.jsx';
 import Button from 'react-bootstrap/Button';
 import './About.css';
+import { useTranslation } from 'react-i18next';
 function About() {
+    const [t, i18n] = useTranslation('global');
     return (
         <div class="divs">
             <NavB />
             <div className="aboutContainer">
-                <h1 class="aboutTitle">About me </h1>
+                <h1 class="aboutTitle">{t('about.about')}</h1>
                 <div class="about">
-                    <p>
-                        Full stack web developer and Biomedical engineer,
-                        passionate about programming world, I consider myself a
-                        person with teamwork skills , committed and always with
-                        positive attitude to learn new technologies, I love
-                        challenges and solving problems.
-                    </p>
+                    <p>{t('about.about-me')}</p>
                     <div class="personal">
-                        <div class="personalinfo">
-                            <li class="list">Birthday :</li>
-                            <span class="span">25-October </span>{' '}
-                            <li class="list">Language : </li>
-                            <span class="span">Spanish, English(B2) </span>{' '}
-                            <li class="list">Phone : </li>
-                            <span class="span">+57 321-861-5549 </span>{' '}
-                        </div>
-                        <div class="personalinfo">
-                            <li class="list">Email : </li>
-                            <span class="span">
-                                silvanamurillas@gmail.com{' '}
-                            </span>{' '}
-                            <li class="list">Country :</li>
-                            <span class="span">Colombia </span>{' '}
-                        </div>
+                        <ul className="personalinfo">
+                            <li className="list">
+                                {t('about.birthday')}{' '}
+                                <span class="span">{t('about.date')}</span>{' '}
+                            </li>
+                            <li class="list">
+                                {t('about.language')}{' '}
+                                <span class="span">{t('about.info')}</span>{' '}
+                            </li>
+                            <li class="list">
+                                {t('about.phone')}
+                                <span class="span">+57 321-861-5549 </span>{' '}
+                            </li>
+                        </ul>
+                        <ul class="personalinfo">
+                            <li className="list">
+                                {t('about.email')}{' '}
+                                <span class="span">
+                                    silvanamurillas@gmail.com{' '}
+                                </span>{' '}
+                            </li>
+                            <li class="list">
+                                {t('about.country')}{' '}
+                                <span class="span">Colombia </span>{' '}
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div className="skill">
-                    <h1 class="skillsTitle">My skills </h1>
+                    <h1 class="skillsTitle">{t('about.skills')} </h1>
                     <div class="skills">
                         <img src="html-5.png" />
                         <img src="css-3.png" />

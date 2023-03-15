@@ -1,14 +1,18 @@
+import Button from 'react-bootstrap/Button';
 import React from 'react';
 import { useContext } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { ThemeContext } from '../App';
+import './NavB.css';
 
 function NavB() {
     const { theme, toggleTheme } = useContext(ThemeContext);
+    const [t, i18n] = useTranslation('global');
 
     return (
         <>
@@ -35,21 +39,9 @@ function NavB() {
         </Navbar> */}
 
             {/* <br /> */}
-            <Navbar
-                bg="ligth"
-                variant="light"
-                fixed="top"
-                style={
-                    theme === 'light'
-                        ? {
-                              background: '#f5cac3',
-                              fontFamily: 'Poppins',
-                          }
-                        : { background: '#457d8b', fontFamily: 'Poppins' }
-                }
-            >
-                <Container>
-                    <Nav className="me-auto">
+            <Navbar bg="ligth" variant="light" fixed="top" className="navBar">
+                <Container style={{ marginLeft: 0 }}>
+                    <Nav className="me-auto nav">
                         <Nav.Link>
                             {' '}
                             <Link
@@ -66,7 +58,7 @@ function NavB() {
                                           }
                                 }
                             >
-                                Home
+                                {t('nav.home')}
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
@@ -84,7 +76,7 @@ function NavB() {
                                           }
                                 }
                             >
-                                About me
+                                {t('nav.about')}
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
@@ -103,7 +95,7 @@ function NavB() {
                                           }
                                 }
                             >
-                                Projects
+                                {t('nav.projects')}
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
@@ -121,7 +113,7 @@ function NavB() {
                                           }
                                 }
                             >
-                                Contact me
+                                {t('nav.contact')}
                             </Link>
                         </Nav.Link>
                         <DarkModeSwitch
@@ -130,6 +122,46 @@ function NavB() {
                             onChange={toggleTheme}
                             size={30}
                         />
+                        <Button
+                            size="sm"
+                            style={
+                                theme === 'light'
+                                    ? {
+                                          marginLeft: '1rem',
+                                          background: '#f28482',
+                                          fontFamily: 'Poppins',
+                                          border: 'none',
+                                      }
+                                    : {
+                                          marginLeft: '1rem',
+                                          background: '#3b4752',
+                                          fontFamily: 'Poppins',
+                                      }
+                            }
+                            className="btn"
+                            onClick={() => i18n.changeLanguage('en')}
+                        >
+                            EN
+                        </Button>
+                        <Button
+                            size="sm"
+                            style={
+                                theme === 'light'
+                                    ? {
+                                          background: '#f28482',
+                                          fontFamily: 'Poppins',
+                                          border: 'none',
+                                      }
+                                    : {
+                                          background: '#3b4752',
+                                          fontFamily: 'Poppins',
+                                      }
+                            }
+                            className="btn"
+                            onClick={() => i18n.changeLanguage('es')}
+                        >
+                            ES
+                        </Button>
                     </Nav>
                 </Container>
             </Navbar>

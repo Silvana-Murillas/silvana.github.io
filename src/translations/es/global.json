@@ -1,0 +1,45 @@
+{
+    "home": {
+        "greeting": "Hola, mi nombre es",
+        "name": "Silvana Murillas",
+        "about": "Apasionada desarrolladora web full stack de Colombia",
+        "know": "En este espacio puedes conocer mas acerca de mi",
+        "resume": "Hoja de vida"
+    },
+    "about": {
+        "about": "Acerca de mi",
+        "about-me": "Desarrolladora web full stack y ingeniera biomédica , apasionada por el mundo de la programación, me considero una persona con habilidades para trabajar en equipo , comprometida y siempre con una actitud positiva para aprender nuevas tecnologias , amo los desafios y la resolución de problemas.",
+        "birthday": "Fecha de nacimiento :",
+        "date": "25-Octuber",
+        "language": "Idiomas :",
+        "info": "Español, Ingles(B2)",
+        "phone": "Telefono :",
+        "email": "Correo electrónico :",
+        "country": "Pais :",
+        "skills": "Mis habilidades"
+    },
+    "projects": {
+        "my-proyects": "Mis proyectos",
+        "nabijash": "Proyecto final",
+        "food": "Proyecto individual de recetas (aplicación de página unica)",
+        "movie": "Buscador de películas (aplicación de página unica) ",
+        "shopping": "Carrito de compras (aplicación de página unica)"
+    },
+    "contact": {
+        "message": "Mensaje enviado !",
+        "contact-me": "Contáctame",
+        "email": "Mi correo",
+        "phone": "Mi telefono",
+        "location": "Ubicación",
+        "name": "Nombre",
+        "email-direction": "Dirección de correo electrónico",
+        "mess": "Mensaje",
+        "submit": "Enviar"
+    },
+    "nav": {
+        "home": "Inicio",
+        "about": "Acerca de mi",
+        "projects": "Proyectos",
+        "contact": "Contactame"
+    }
+}
